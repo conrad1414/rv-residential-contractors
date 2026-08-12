@@ -9,6 +9,7 @@ A single-page, static landing site for R & V Residential Contractors (general co
 ## Editing later
 
 - **Logo:** replace the text wordmark in the header (`.logo` element near the top of `index.html`'s `<body>`) with `<img src="logo.png" alt="R & V Residential Contractors">` once a real logo file is available.
+- **Photos:** the "Our Work" section (`id="work"`) has 3 photo slots, each marked with an HTML comment (`PHOTO SLOT 1/2/3`). To add a picture, upload the image file to this repo (e.g. `work-1.jpg`) and replace that slot's `<div class="placeholder">...</div>` contents with `<img src="work-1.jpg" alt="...">`.
 - **Service area:** the "Service Area & Contact" section currently uses generic wording — update it with a specific city/region once known.
 - **Reviews:** the Google review link currently points to a generic search query; swap in the real Google Business Profile URL once available.
 

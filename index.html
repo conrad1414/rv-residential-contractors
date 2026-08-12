@@ -207,6 +207,26 @@
   }
   .service-card p{color:#6b665c;font-size:0.95rem;line-height:1.55;position:relative;z-index:1;}
 
+  /* ---------- Gallery ---------- */
+  .gallery{background:var(--cream);}
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .photo-slot{
+    aspect-ratio:4/5;border-radius:6px;overflow:hidden;position:relative;
+    background:var(--charcoal-2);border:1px dashed var(--amber);
+  }
+  .photo-slot img{width:100%;height:100%;object-fit:cover;}
+  .photo-slot .placeholder{
+    position:absolute;inset:0;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:12px;
+    color:#a9a297;text-align:center;padding:20px;
+  }
+  .photo-slot .placeholder svg{width:36px;height:36px;stroke:var(--amber);}
+  .photo-slot .placeholder .label{
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;
+    font-size:1rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--cream);
+  }
+  .photo-slot .placeholder .hint{font-size:0.78rem;color:#8b8578;max-width:180px;}
+
   /* ---------- Why us ---------- */
   .why{background:var(--charcoal);color:var(--cream);position:relative;}
   .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
@@ -285,6 +305,7 @@
     .hero-grid{grid-template-columns:1fr;}
     .hero{padding-top:120px;}
     .services-grid{grid-template-columns:1fr 1fr;}
+    .gallery-grid{grid-template-columns:1fr 1fr;}
     .why-grid{grid-template-columns:1fr;}
     .area-grid{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr 1fr;}
@@ -293,6 +314,7 @@
     .nav-links{display:none;}
     .menu-toggle{display:block;}
     .services-grid{grid-template-columns:1fr;}
+    .gallery-grid{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr;}
     .hero-stats{gap:20px;}
     section{padding:70px 0;}
@@ -306,6 +328,7 @@
     <a href="#top" class="logo"><!-- swap for a real logo image later --><span>R<span class="amp">&amp;</span>V</span></a>
     <nav class="nav-links">
       <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
       <a href="#why">Why Us</a>
       <a href="#area">Service Area</a>
       <a href="tel:+15073509061" class="nav-cta">Call Now</a>
@@ -384,6 +407,45 @@
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5Z"/></svg></div>
         <h3>Home Renovations</h3>
         <p>Kitchens, additions, and whole-home updates managed start-to-finish under one trusted crew.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Our Work</div>
+      <h2>Recent Projects</h2>
+      <p>A look at the kind of craftsmanship you can expect. Add your own project photos below.</p>
+    </div>
+    <div class="gallery-grid">
+      <!-- PHOTO SLOT 1: replace the whole .photo-slot div's contents with
+           <img src="work-1.jpg" alt="Bathroom remodeling project by R & V Residential Contractors"> -->
+      <div class="photo-slot reveal">
+        <div class="placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg>
+          <div class="label">Photo Slot 1</div>
+          <div class="hint">Bathroom remodel &mdash; swap in <code>work-1.jpg</code></div>
+        </div>
+      </div>
+      <!-- PHOTO SLOT 2: replace with
+           <img src="work-2.jpg" alt="Exterior finishing project by R & V Residential Contractors"> -->
+      <div class="photo-slot reveal">
+        <div class="placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg>
+          <div class="label">Photo Slot 2</div>
+          <div class="hint">Exterior finishing &mdash; swap in <code>work-2.jpg</code></div>
+        </div>
+      </div>
+      <!-- PHOTO SLOT 3: replace with
+           <img src="work-3.jpg" alt="Home renovation project by R & V Residential Contractors"> -->
+      <div class="photo-slot reveal">
+        <div class="placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg>
+          <div class="label">Photo Slot 3</div>
+          <div class="hint">Home renovation &mdash; swap in <code>work-3.jpg</code></div>
+        </div>
       </div>
     </div>
   </div>
