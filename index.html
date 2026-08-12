@@ -142,13 +142,13 @@
   .stat .num{font-family:'Archivo',sans-serif;font-size:2rem;font-weight:900;line-height:1;color:#fff;}
   .stat .label{font-size:0.7rem;color:#8fa0b3;text-transform:uppercase;letter-spacing:0.08em;margin-top:6px;}
 
+  .hero-photo-wrap{position:relative;z-index:2;max-width:260px;margin:0 auto;}
   .hero-photo{
-    position:relative;z-index:2;
+    position:relative;
     aspect-ratio:5/4;border-radius:8px;overflow:hidden;
     border:1px solid rgba(255,255,255,0.15);
-    box-shadow:0 40px 70px -25px rgba(0,0,0,0.55);
+    box-shadow:0 30px 60px -22px rgba(0,0,0,0.55);
     background:var(--navy-2);
-    max-width:440px;margin:0 auto;
   }
   .hero-photo img{
     width:100%;height:100%;object-fit:cover;object-position:center 40%;
@@ -166,14 +166,14 @@
   }
   .hero-photo .ph-fallback svg{width:40px;height:40px;stroke:var(--orange);}
   .hero-photo .ph-fallback .label{color:#fff;font-weight:700;font-family:'Archivo',sans-serif;text-transform:uppercase;letter-spacing:0.04em;}
-  .hero-photo .tag{
-    position:absolute;bottom:20px;left:20px;right:20px;
-    background:rgba(14,33,54,0.85);backdrop-filter:blur(6px);
-    border-radius:6px;padding:14px 16px;
-    display:flex;align-items:center;gap:12px;
+  .hero-photo-wrap .tag{
+    margin-top:12px;
+    background:var(--navy-2);border:1px solid rgba(255,255,255,0.12);
+    border-radius:6px;padding:10px 14px;
+    display:flex;align-items:center;justify-content:center;gap:10px;
   }
-  .hero-photo .tag .stars{color:var(--orange-2);font-size:1rem;letter-spacing:1px;}
-  .hero-photo .tag .txt{font-size:0.8rem;color:#dfe6ee;}
+  .hero-photo-wrap .tag .stars{color:var(--orange-2);font-size:0.9rem;letter-spacing:1px;}
+  .hero-photo-wrap .tag .txt{font-size:0.76rem;color:#dfe6ee;}
   .hero-photo .tag .txt strong{color:#fff;}
 
   /* ---------- Marquee ---------- */
@@ -233,10 +233,11 @@
   .gallery{background:var(--navy);color:#fff;}
   .gallery .eyebrow{color:var(--orange-2);}
   .gallery .section-head p{color:#b9c4d0;}
-  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:900px;margin:0 auto;}
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
   .photo-slot{
     aspect-ratio:5/4;border-radius:8px;overflow:hidden;position:relative;
     background:var(--navy-2);border:1px solid rgba(255,255,255,0.12);
+    max-width:190px;margin:0 auto;width:100%;
   }
   .photo-slot::after{
     content:'';position:absolute;inset:0;pointer-events:none;
@@ -331,7 +332,7 @@
   @media (max-width:900px){
     .hero-grid{grid-template-columns:1fr;}
     .hero{padding-top:120px;}
-    .hero-photo{max-width:420px;}
+    .hero-photo-wrap{max-width:260px;}
     .services-grid{grid-template-columns:repeat(2,1fr);}
     .service-card{grid-column:span 1 !important;}
     .gallery-grid{grid-template-columns:1fr 1fr;}
@@ -390,8 +391,10 @@
       </div>
     </div>
 
-    <div class="hero-photo">
-      <img src="work-1.jpg" alt="Bay window and interior finish work by R & V Residential Contractors">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <img src="work-1.jpg" alt="Bay window and interior finish work by R & V Residential Contractors">
+      </div>
       <div class="tag">
         <span class="stars">★★★★★</span>
         <span class="txt"><strong>5.0</strong> rated &middot; 4 Google reviews</span>
