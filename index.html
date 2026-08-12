@@ -57,6 +57,10 @@
     border:2px solid var(--orange-2);
     flex-shrink:0;
   }
+  img.badge-mark{
+    border-radius:8px;background:#fff;border:1px solid var(--orange-2);
+    object-fit:contain;padding:2px;
+  }
   .brand-text{color:#fff;font-weight:800;font-size:1.05rem;line-height:1.1;font-family:'Archivo',sans-serif;text-transform:uppercase;}
   .brand-text span{display:block;font-size:0.62rem;font-weight:600;color:var(--orange-2);letter-spacing:0.14em;margin-top:2px;text-transform:uppercase;}
   .nav-links{display:flex;gap:30px;align-items:center;}
@@ -334,7 +338,7 @@
 <header>
   <div class="nav">
     <a href="#top" class="brand">
-      <div class="badge-mark">R&amp;V</div>
+      <img src="logo.png" alt="R & V Residential Contractors LLC" class="badge-mark">
       <div class="brand-text">R &amp; V<span>Residential Contractors</span></div>
     </a>
     <nav class="nav-links">
@@ -369,12 +373,7 @@
     </div>
 
     <div class="hero-photo">
-      <!-- HERO PHOTO: replace the .ph-fallback div below with
-           <img src="hero.jpg" alt="R & V Residential Contractors project"> -->
-      <div class="ph-fallback">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg>
-        <div class="label">Featured Project Photo</div>
-      </div>
+      <img src="work-1.jpg" alt="Bay window and interior finish work by R & V Residential Contractors">
       <div class="tag">
         <span class="stars">★★★★★</span>
         <span class="txt"><strong>5.0</strong> rated &middot; 4 Google reviews</span>
@@ -424,31 +423,16 @@
       <p>A look at the kind of craftsmanship you can expect on your job site.</p>
     </div>
     <div class="gallery-grid">
-      <!-- PHOTO SLOT 1: replace the .ph-fallback div's contents with
-           <img src="work-1.jpg" alt="Bay window and interior finish work by R & V Residential Contractors"> -->
       <div class="photo-slot reveal">
-        <div class="ph-fallback">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg>
-          <div class="hint">Bay window &amp; interior finish &mdash; swap in <code>work-1.jpg</code></div>
-        </div>
+        <img src="work-1.jpg" alt="Bay window and interior finish work by R & V Residential Contractors">
         <div class="caption"><div class="label">Interior &amp; Window Finish</div></div>
       </div>
-      <!-- PHOTO SLOT 2: replace the .ph-fallback div's contents with
-           <img src="work-2.jpg" alt="Exterior siding installation by R & V Residential Contractors"> -->
       <div class="photo-slot reveal">
-        <div class="ph-fallback">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg>
-          <div class="hint">Exterior siding &mdash; swap in <code>work-2.jpg</code></div>
-        </div>
+        <img src="work-2.jpg" alt="Exterior siding installation by R & V Residential Contractors">
         <div class="caption"><div class="label">Exterior Siding</div></div>
       </div>
-      <!-- PHOTO SLOT 3: replace the .ph-fallback div's contents with
-           <img src="work-3.jpg" alt="Home renovation framing by R & V Residential Contractors"> -->
       <div class="photo-slot reveal">
-        <div class="ph-fallback">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg>
-          <div class="hint">Renovation in progress &mdash; swap in <code>work-3.jpg</code></div>
-        </div>
+        <img src="work-3.jpg" alt="Home renovation framing by R & V Residential Contractors">
         <div class="caption"><div class="label">Renovation In Progress</div></div>
       </div>
     </div>
@@ -539,7 +523,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">
-          <div class="badge-mark">R&amp;V</div>
+          <img src="logo.png" alt="R & V Residential Contractors LLC" class="badge-mark">
           <div class="footer-brand-text">R &amp; V Residential Contractors</div>
         </div>
         <p>General contracting done right &mdash; bathroom remodeling, exterior finishing, and home renovations backed by a 5.0-star reputation.</p>
